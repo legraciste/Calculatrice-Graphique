@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class HelloController {
@@ -15,6 +16,7 @@ public class HelloController {
     private Button btnResultat;
     private Button parentheseDroite;
     private Button parentheseGauche;
+    private Button effacer;
     private TextField txtFiledResultat;
 
 
@@ -54,6 +56,11 @@ public class HelloController {
     }
 
     void onBtnParentheseGauche(ActionEvent event)
+    {
+
+    }
+
+    void onBtnEffacer(ActionEvent event)
     {
 
     }
