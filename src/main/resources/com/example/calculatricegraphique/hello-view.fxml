@@ -7,16 +7,17 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.example.calculatricegraphique.HelloController">
+<VBox alignment="CENTER" prefHeight="268.0" prefWidth="371.0" spacing="20.0" style="-fx-background-color: E1EB4B;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculatricegraphique.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
-      <TextField fx:id="txtFieldResultat" />
-      <Button fx:id="btnEffacer" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnEffacerAction" text="Effacer">
+      <TextField fx:id="txtFieldResultat" maxWidth="506.0" minHeight="32.0" minWidth="50.0" prefHeight="43.0" prefWidth="506.0" />
+      <Button fx:id="btnEffacer" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnEffacerAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: red;" text="Effacer" textFill="WHITE">
          <VBox.margin>
-            <Insets left="-445.0" />
+            <Insets left="-260.0" />
          </VBox.margin>
       </Button>
       <GridPane minWidth="57.0">
@@ -43,16 +44,34 @@
             <Button fx:id="btnNeuf" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnNeufAction" text="9" GridPane.columnIndex="2" />
             <Button fx:id="btnSix" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnSixAction" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Button fx:id="btnTrois" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnTroisAction" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="btnParentheseGauche" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnParentheseGauche" text="(" GridPane.columnIndex="3" />
-            <Button fx:id="btnAddition" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnAdditionAction" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button fx:id="btnSoustraction" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnSoustractionAction" text=" -" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btnParentheseGauche" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnParentheseGauche" style="-fx-background-color: black;" text="(" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnAddition" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnAdditionAction" style="-fx-background-color: black;" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnSoustraction" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnSoustractionAction" style="-fx-background-color: black;" text=" -" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="0" GridPane.rowIndex="3" />
-            <Button minWidth="57.0" mnemonicParsing="false" text="⋅" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button fx:id="btnSupprimer" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnSupprimerAction" text="supp" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="btnParentheseDroite" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnParentheseDroite" text=")" GridPane.columnIndex="4" />
-            <Button fx:id="btnDivision" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnDivisionAction" text="÷" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button fx:id="btnMultiplication" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnMultiplicationAction" text="×" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Button fx:id="btnResultat" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnResultatAction" prefHeight="25.0" prefWidth="26.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button minWidth="57.0" mnemonicParsing="false" text="•" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnSupprimer" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnSupprimerAction" text="↩" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btnParentheseDroite" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnParentheseDroite" style="-fx-background-color: black;" text=")" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnDivision" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnDivisionAction" style="-fx-background-color: black;" text="÷" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="btnMultiplication" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnMultiplicationAction" style="-fx-background-color: black;" text="×" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnResultat" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnResultatAction" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: orange;" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3" />
          </children>
          <VBox.margin>
             <Insets />
