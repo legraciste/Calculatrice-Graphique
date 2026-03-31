@@ -10,7 +10,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
-      <TextField fx:id="txtFieldResultat" maxWidth="506.0" minHeight="32.0" minWidth="50.0" prefHeight="43.0" prefWidth="506.0">
+      <TextField fx:id="txtFieldResultat" editable="false" maxWidth="506.0" minHeight="32.0" minWidth="50.0" prefHeight="43.0" prefWidth="506.0">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></TextField>
