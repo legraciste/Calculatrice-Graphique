@@ -154,9 +154,6 @@ public class HelloController {
 
     @FXML
     void onBtnResultatAction(ActionEvent event) {
-
-
-
     }
 
     @FXML
