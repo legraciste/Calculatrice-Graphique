@@ -1,7 +1,5 @@
 package com.example.calculatricegraphique;
 
-
-
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
@@ -12,6 +10,8 @@ import javafx.scene.control.TextField;
 
 
 public class HelloController {
+
+    Operation operation = new Operation();
 
     @FXML
     private Button btnAddition;
@@ -54,7 +54,6 @@ public class HelloController {
     @FXML
     private TextField txtFieldResultat;
 
-    private boolean  nouvelleEntree = false;
     String valeurActuelle;
 
     @FXML
@@ -62,7 +61,6 @@ public class HelloController {
 
         valeurActuelle = txtFieldResultat.getText() + ".";
         txtFieldResultat.setText(valeurActuelle);
-
 
     }
 
@@ -154,6 +152,8 @@ public class HelloController {
 
     @FXML
     void onBtnResultatAction(ActionEvent event) {
+        double resultat = operation.eval(txtFieldResultat.getText());
+        txtFieldResultat.setText(String.valueOf(resultat));
     }
 
     @FXML

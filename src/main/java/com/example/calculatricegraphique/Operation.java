@@ -26,7 +26,7 @@ public class Operation {
     }
 
     // NOUVELLE MÉTHODE
-    double eval(String exp) {
+    public double eval(String exp) {
 
         exp = exp.replace(" ", "").replace(",", ".");
 
